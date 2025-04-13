@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /test
+mkdir logss 
+cd /test/logss
+net=netstat.txt
+if [ -e $net ]
+then
+echo "This file already exists"
+else
+touch $net
+fi
+netstat | head -10 >> $net 

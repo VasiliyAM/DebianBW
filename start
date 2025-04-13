@@ -1,0 +1,10 @@
+#!/bin/bash
+cd /test
+file_name=apt_list.txt
+if [ -e $file_name ] 
+then
+echo "This file already exists"
+else
+touch $file_name
+fi
+apt list >> $file_name

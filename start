@@ -8,3 +8,4 @@ else
 touch $file_name
 fi
 apt list >> $file_name
+echo "I am here"
